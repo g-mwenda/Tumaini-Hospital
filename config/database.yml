@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: dpg-ciij86t9aq012eqd1jmg-a
+  port: 5432
+  database: myhospital
+  username: myhospital_user
+  password: yZVVl0GaJaAoBtfXGCAv6oWZlqM2kNP5
+
+production:
+  <<: *default
